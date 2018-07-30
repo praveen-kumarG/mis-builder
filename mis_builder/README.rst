@@ -16,11 +16,14 @@ MIS Builder
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fmis--builder-lightgray.png?logo=github
     :target: https://github.com/OCA/mis-builder/tree/10.0/mis_builder
     :alt: OCA/mis-builder
-.. |badge4| image:: https://img.shields.io/badge/runbot-Try%20me-875A7B.png
+.. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
+    :target: https://translation.odoo-community.org/projects/mis-builder-10-0/mis-builder-10-0-mis_builder
+    :alt: Translate me on Weblate
+.. |badge5| image:: https://img.shields.io/badge/runbot-Try%20me-875A7B.png
     :target: https://runbot.odoo-community.org/runbot/248/10.0
     :alt: Try me on Runbot
 
-|badge1| |badge2| |badge3| |badge4| 
+|badge1| |badge2| |badge3| |badge4| |badge5| 
 
 This module allows you to build Management Information Systems dashboards.
 Such style of reports presents KPI in rows and time periods in columns.
@@ -93,6 +96,17 @@ be found on GitHub.
 
 Changelog
 =========
+
+10.0.3.2.2 (2018-06-30)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* [FIX] Fix bug in company_default_get call returning
+  id instead of recordset
+  (`#103 <https://github.com/OCA/mis-builder/pull/103>`_)
+* [IMP] add "hide always" style property to make hidden KPI's
+  (for KPI that serve as basis for other formulas, but do not
+  need to be displayed).
+  (`#46 <https://github.com/OCA/mis-builder/issues/46>`_)
 
 10.0.3.2.1 (2018-05-29)
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -320,7 +334,8 @@ Bug Tracker
 
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/mis-builder/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
-If you spotted it first, help us smashing it by providing a detailed and welcomed feedback.
+If you spotted it first, help us smashing it by providing a detailed and welcomed
+`feedback <https://github.com/OCA/mis-builder/issues/new?body=module:%20mis_builder%0Aversion:%2010.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -348,10 +363,11 @@ Contributors
 * Laurent Mignon <laurent.mignon@acsone.eu>
 * Luc De Meyer <luc.demeyer@noviat.com>
 * Benjamin Willig <benjamin.willig@acsone.eu>
-* Martronic SA <info@martronic.ch>  
+* Martronic SA <info@martronic.ch>
 * nicomacr <nmr@adhoc.com.ar>
 * Juan Jose Scarafia <jjs@adhoc.com.ar>
 * Richard deMeester <richard@willowit.com.au>
+* Eric Caudal <eric.caudal@elico-corp.com>
 
 Maintainers
 ~~~~~~~~~~~
