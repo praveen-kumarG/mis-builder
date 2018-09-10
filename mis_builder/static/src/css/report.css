@@ -34,7 +34,7 @@
 .mis_table .mis_cell.mis_collabel {
     font-weight: bold;
     background-color: #F0F0F0;
-    text-align: center;
+    text-align: right;
 }
 .mis_table .mis_cell.mis_rowlabel {
     text-align: left;
